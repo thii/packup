@@ -2,6 +2,12 @@
 
 Scaffold out a Swift package.
 
+## Installation
+
+Build from source (requires Swift 2.2 development toolchain):
+
+    make install
+
 ## Usage
 
     $ packup <YOUR_PACKAGE_NAME> <YOUR_GITHUB_USERNAME>

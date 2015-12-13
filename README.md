@@ -1,4 +1,4 @@
-# Packup [![Swift Package Manager Compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
+# Packup
 
 Scaffold out a Swift package.
 

@@ -27,6 +27,7 @@ let main = command() { (packageName: String, githubUsername: String) in
         "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
         "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN",
         "THE SOFTWARE.",
+        "",
     ]
     let license = licenseStrings.joinWithSeparator("\n")
     try fputs(license, fopen("./\(packageName)/LICENSE", mode: "w"))
@@ -58,6 +59,7 @@ let main = command() { (packageName: String, githubUsername: String) in
         "",
         "## License",
         "\(packageName) is released under the MIT license. See LICENSE for details.",
+        "",
     ]
     let readme = readmeStrings.joinWithSeparator("\n")
     try fputs(readme, fopen("./\(packageName)/README.md", mode: "w"))
@@ -66,6 +68,7 @@ let main = command() { (packageName: String, githubUsername: String) in
     var gitignoreStrings = [
         "Packages/",
         ".build/",
+        "",
     ]
     let gitignore = gitignoreStrings.joinWithSeparator("\n")
     try fputs(gitignore, fopen("./\(packageName)/.gitignore", mode: "w"))
@@ -79,6 +82,7 @@ let main = command() { (packageName: String, githubUsername: String) in
         "    dependencies: [",
         "    ]",
         ")",
+        "",
     ]
     let packageSwift = packageSwiftStrings.joinWithSeparator("\n")
     try fputs(packageSwift, fopen("./\(packageName)/Package.swift", mode: "w"))
@@ -97,6 +101,7 @@ let main = command() { (packageName: String, githubUsername: String) in
         "clean:",
         "\trm -rf Packages",
         "\tswift build --clean",
+        "",
     ]
     let makefile = readmeStrings.joinWithSeparator("\n")
     try fputs(makefile, fopen("./\(packageName)/Makefile", mode: "w"))

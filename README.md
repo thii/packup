@@ -8,6 +8,8 @@ Build from source (requires Swift 2.2 development toolchain):
 
     make install
 
+Or download from the [Releases page](https://github.com/thii/packup/releases).
+
 ## Usage
 
     $ packup <YOUR_PACKAGE_NAME> <YOUR_GITHUB_USERNAME>

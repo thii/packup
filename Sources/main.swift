@@ -103,7 +103,7 @@ let main = command() { (packageName: String, githubUsername: String) in
         "\tswift build --clean",
         "",
     ]
-    let makefile = readmeStrings.joinWithSeparator("\n")
+    let makefile = makefileStrings.joinWithSeparator("\n")
     try fputs(makefile, fopen("./\(packageName)/Makefile", mode: "w"))
 }
 

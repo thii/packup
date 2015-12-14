@@ -4,9 +4,11 @@ Scaffold out a Swift package.
 
 ## Installation
 
-Build from source (requires Swift 2.2 development toolchain):
+Build from source (requires [Swift 2.2 development toolchain](https://swift.org/download/#latest-development-snapshots)):
 
     make install
+
+`packup` will be install at `/usr/local/bin/packup`.
 
 Or download from the [Releases page](https://github.com/thii/packup/releases).
 

@@ -93,7 +93,7 @@ let main = command() { (packageName: String, githubUsername: String) in
 
     // Write Makefile file
     var makefileStrings = [
-        ".PHONY: all run clean",
+        ".PHONY: all clean",
         "",
         "all:",
         "\tswift build",

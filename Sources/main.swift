@@ -103,8 +103,27 @@ let main = command() { (packageName: String, githubUsername: String) in
         "\tswift build --clean",
         "",
     ]
+
     let makefile = makefileStrings.joinWithSeparator("\n")
     try fputs(makefile, fopen("./\(packageName)/Makefile", mode: "w"))
+
+    var editorconfigStrings = [
+        "root = true",
+        "",
+        "[*]",
+        "indent_style = space",
+        "indent_size = 4",
+        "end_of_line = lf",
+        "charset = utf-8",
+        "trim_trailing_whitespace = true",
+        "insert_final_newline = true",
+        "",
+        "[*.md]",
+        "trim_trailing_whitespace = false",
+        "",
+    ]
+    let editorconfig = editorconfigStrings.joinWithSeparator("\n")
+    try fputs(editorconfig, fopen("./\(packageName)/.editorconfig", mode: "w"))
 }
 
 main.run()
